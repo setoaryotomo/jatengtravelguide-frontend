@@ -1,0 +1,478 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/flatpickr.min.css">
+
+
+	<title>Jateng</title>
+</head>
+
+<style>
+    /* Atur posisi ikon menu untuk tetap di pojok kanan atas saat responsif */
+.site-nav .burger {
+    position: absolute;
+    top: 30px; /* Atur jarak atas sesuai kebutuhan */
+    right: 20px; /* Atur jarak kanan sesuai kebutuhan */
+    z-index: 10; /* Pastikan berada di atas elemen lain */
+}
+
+/* Atur gaya untuk memusatkan kategori */
+.site-menu {
+    display: flex;
+    justify-content: center; /* Memusatkan item secara horizontal */
+    align-items: center; /* Memusatkan item secara vertikal */
+    list-style: none; /* Menghilangkan bullet pada daftar */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Gaya untuk form pencarian */
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+
+</style>
+
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<nav class="site-nav fixed-top">
+		<div class="container">
+			<div class="menu-bg-wrap">
+				<div class="site-navigation">
+					<div class="row g-0 align-items-center">
+						<div class="col-2">
+							<a href="" class="logo m-0 float-start">
+								<img src="https://jatengtravelguide.info/images/logo/jateng%20travel%20guide.png" alt="Jateng Logo" class="img-logo" style="height: 60px;">
+							</a>
+						</div>
+						<div class="col-9 text-end">
+
+							<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
+								<li class="active"><a href="index.html">HOME</a></li>
+								
+								<li><a href="category.html">KULINER</a></li>
+								<li><a href="category.html">WISATA</a></li>
+								<li><a href="category.html">PENGINAPAN</a></li>
+							</ul>
+						</div>
+						<div class="col-1 text-end">
+							<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
+								<span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('images/v106_1056.png');">
+		<div class="container">
+		  <div class="row same-height">
+			<div class="col-md-8">
+			  <div class="post-entry">
+				<h1 class="mb-0">Jateng Travel Guide</h1><br>
+				<h3 class="mb-0" style="color: white;">hadir untuk membagikan informasi terkini seputar destinasi wisata, penginapan hingga kuliner dari seluruh kota di Jawa Tengah.</h3>
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<!-- Start retroy layout blog posts -->
+	<section class="section bg-light">
+		<div class="container">
+			<div class="row align-items-stretch retro-layout">
+				
+				<div class="col-md-8">
+					<a href="single.html" class="h-entry img-5 h-100 gradient">
+
+						<div class="featured-img" style="background-image: url('images/v106_1208.png');"></div>
+
+						<div class="text">
+							<span class="date">Apr. 14th, 2022</span>
+							<h2>Why is my internet so slow?</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="single.html" class="h-entry mb-30 v-height gradient">
+
+						<div class="featured-img" style="background-image: url('images/v106_1238.png');"></div>
+
+						<div class="text">
+							<span class="date">Apr. 14th, 2022</span>
+							<h2>Startup vs corporate: What job suits you best?</h2>
+						</div>
+					</a>
+					<a href="single.html" class="h-entry v-height gradient">
+
+						<div class="featured-img" style="background-image: url('images/v106_1244.png');"></div>
+
+						<div class="text">
+							<span class="date">Apr. 14th, 2022</span>
+							<h2>Thought you loved Python? Wait until you meet Rust</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End retroy layout blog posts -->
+
+<!-- Start posts-entry -->
+<section class="section posts-entry posts-entry-sm site-cover overlay" style="color: white;background-image: url(images/v106_1007.png);background-size: cover; background-position: center;">
+	<div class="container">
+		<div class="row mb-4">
+			<div class="col-sm-6">
+				<h2 class="posts-entry-title" style="color: white;">WISATA</h2>
+			</div>
+			<!-- <div class="col-sm-6 text-sm-end"><a href="category.html" class="read-more" style="color: white;">View All</a></div> -->
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1129.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#" style="color: white;">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html" style="color: white;">Startup vs corporate: What job suits you best?</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1129.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#" style="color: white;">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html" style="color: white;">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1129.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#" style="color: white;">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html" style="color: white;">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- End posts-entry -->
+
+<!-- Start posts-entry -->
+<section class="section posts-entry posts-entry-sm site-cover" style="background-image: url(images/bg.png);background-size: cover; background-position: center;">
+<!-- <section class="section posts-entry posts-entry-sm"> -->
+	<div class="container" style="color: black;">
+		<div class="row mb-4">
+			<div class="col-sm-6">
+				<h2 class="posts-entry-title">KULINER</h2>
+			</div>
+			<!-- <div class="col-sm-6 text-sm-end"><a href="category.html" class="read-more">View All</a></div> -->
+		</div>
+		<div class="row justify-content-center" style="color: black;">
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1078.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix" style="color: black;">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#" style="color: black;">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1078.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix" style="color: black;">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#" style="color: black;">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1078.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix" style="color: black;">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#" style="color: black;">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- End posts-entry -->
+
+<!-- Start posts-entry -->
+<section class="section posts-entry posts-entry-sm site-cover overlay" style="color: white;background-image: url(images/v106_1006.png);background-size: cover; background-position: center;">
+	<div class="container">
+		<div class="row mb-4">
+			<div class="col-sm-6">
+				<h2 class="posts-entry-title" style="color: white;">PENGINAPAN</h2>
+			</div>
+			<!-- <div class="col-sm-6 text-sm-end"><a href="category.html" class="read-more" style="color: white;">View All</a></div> -->
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1145.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#" style="color: white;">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html" style="color: white;">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1145.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#" style="color: white;">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html" style="color: white;">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1145.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#" style="color: white;">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html" style="color: white;">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- End posts-entry -->
+
+<!-- Start posts-entry -->
+<section class="section posts-entry posts-entry-sm site-cover" style="background-image: url(images/bg.png);background-size: cover; background-position: center;">
+<!-- <section class="section posts-entry posts-entry-sm"> -->
+	<div class="container" style="color: black;">
+		<div class="row mb-4">
+			<div class="col-sm-6">
+				<h2 class="posts-entry-title">DOLANNERS</h2>
+			</div>
+			<!-- <div class="col-sm-6 text-sm-end"><a href="category.html" class="read-more" style="color: white;">View All</a></div> -->
+		</div>
+		<div class="row justify-content-center" style="color: black;">
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1179.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix" style="color: black;">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1179.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix" style="color: black;">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mb-4">
+				<div class="post-entry-alt">
+					<a href="single.html" class="img-link"><img src="images/v106_1179.png" alt="Image" class="img-fluid"></a>
+					<div class="excerpt">
+						<div class="post-meta align-items-center text-left clearfix" style="color: black;">
+							<!-- <figure class="author-figure mb-0 me-3 float-start"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure> -->
+							<span class="d-inline-block mt-1">By <a href="#">David Anderson</a></span>
+							<span>&nbsp;-&nbsp; July 19, 2019</span>
+						</div>
+						<h2><a href="single.html">Startup vs corporate: What job suits you best?</a></h2>
+						
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio,</p>
+						<!-- <p><a href="#" class="read-more">Continue Reading</a></p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End posts-entry -->
+
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<!-- <div class="widget">
+						<h3 class="mb-4">About</h3>
+						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					</div> -->
+					<div class="widget">
+						<h3>Social</h3>
+						<ul class="list-unstyled social">
+							<li><a href="#"><span class="icon-instagram"></span></a></li>
+							<li><a href="#"><span class="icon-twitter"></span></a></li>
+							<li><a href="#"><span class="icon-facebook"></span></a></li>
+							<li><a href="#"><span class="icon-linkedin"></span></a></li>
+							<li><a href="#"><span class="icon-pinterest"></span></a></li>
+							<li><a href="#"><span class="icon-dribbble"></span></a></li>
+						</ul>
+					</div> <!-- /.widget -->
+				</div> <!-- /.col-lg-4 -->
+				
+			</div> <!-- /.row -->
+      </div> 
+    </footer> 
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+    	<div class="spinner-border text-primary" role="status">
+    		<span class="visually-hidden">Loading...</span>
+    	</div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+
+    <script src="js/flatpickr.min.js"></script>
+
+
+    <script src="js/aos.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+  </body>
+  </html>
